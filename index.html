@@ -7,8 +7,12 @@
     <meta charset="utf-8">
     <meta name="description" content="SAFETY, QUALITY, AND PEACE OF MIND ELECTRICIAN">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Wave Electrical Noosa</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <title>Wave Electrical Noosa</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
     <meta property="og:title" content="Wave Electrical Noosa" />
     <meta property="og:type" content="electrician" />
     <meta property="og:url" content="https://waveelectricalnoosa.com.au" />
@@ -54,6 +58,7 @@
 }
 
 body {
+  font-family: 'Outfit', sans-serif;
   max-width: 100vw; overflow-x: hidden;
   background-color: #2067AA;
   margin: 0;
@@ -61,7 +66,7 @@ body {
 }
 
 .content {
-  font-family: 'Lato',sans-serif;
+  font-family: 'Outfit', sans-serif;
   text-align: center;
   background-color: #2067AA;
   text-align: center;
@@ -90,8 +95,8 @@ body {
 @media (max-width: 50em) {
 
 
-body > a{height: 6em !important; line-height:6em !important;  font-size: 4vw !important;}
-body > a  svg{}
+nav a{height: 6em !important; line-height:6em !important;  font-size: 4vw !important;}
+nav a  svg{}
 
   .content h1 {
     font-size: 12vmax;
@@ -148,35 +153,36 @@ section {
   word-spacing: .2em;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-family: 'Lato',sans-serif;
+  font-family: 'Outfit',sans-serif;
   max-width: 45em;
   margin: 0 auto;
   font-size: 2em;
   text-align: left;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .editorial {
   background-color: #ddd;
 }
 
-body > a {
-  position: fixed;
+nav{ position:fixed;bottom:0;display:grid;width:100%;   background-color: rgba(10, 45, 80, 0.85); grid-template-columns: 1fr 1fr 1fr 1fr 1fr}
+nav a {
+ 
   bottom: 0;
   font-size: 3.5vw;
   color: white;
-  font-family: lato, sans-serif;
+
   text-decoration: none;
   outline: 0;
   height: 5em;
   letter-spacing: .1em;
-  background-color: rgba(10, 45, 80, 0.85);
+
   line-height: 5em;
   text-align: center;
   display: block;
   transition:  background .3s ease;
 }
-body > a a svg path {
+nav a a svg path {
   stroke-width: .1;
   fill: currentcolor;
   stroke: currentcolor;
@@ -186,47 +192,37 @@ body > a a svg path {
   stroke-dasharray: 0, 10;
   stroke-dashoffset: -2px;
 }
-body > a:focus, body > a:active {
+nav a:focus, nav a:active {
   background-color: white;
   color: #25648F;
 }
-body > a:focus svg path, body > a:active svg path {
+nav a:focus svg path, nav a:active svg path {
   stroke-dashoffset: 0px;
   fill: transparent;
   stroke-dasharray: 10, 0;
   stroke: currentcolor;
   stroke-width: .3px;
 }
+ 
 
-.phone {
-  width: 55vw;
-}
-
-.instagram {
-  width: 15vw;
-  right: 15vw;
-}
-
-.email { stroke: none; fill: currentcolor;
-  width: 15vw;
-  right: 30vw;
-}
-.email svg,
-.phone svg,
-.facebook svg,
-.instagram svg {
-  margin: .25em;
-  display:inline-block; vertical-align: middle;
-
-  width: 2em;
-}
 .email svg path{fill: currentcolor; stroke: none}
 .phone svg{display:inline-block; vertical-align: middle}
 
-.facebook {
-  width: 15vw;
-  right: 0;
+
+.email svg,
+.phone svg,
+.request-booking,
+.facebook svg,
+.instagram svg {
+  margin: .25em;
+    vertical-align: middle;
+
+  width: 2em;
 }
+
+ 
+.request-booking{width: 8em}
+.request-booking span{display:inline-block; padding:.3em .75em; border:.1em solid ; height:2em; line-height:2em;}
 
 a svg path {
   fill: none;
@@ -242,6 +238,7 @@ p {
 .featurelist {
   text-align: center;
 }
+b{font-weight:600}
 
 
 .footer{text-align: center; margin: 2em 0; max-width: 100vw; padding-top:1em; border-top: .2em solid }
@@ -251,13 +248,11 @@ p {
 .footer a{color:white; text-decoration: none;}
 
 
-  .request-booking{position: fixed; top:0; right:0; bottom:  auto !important; z-index:999;left: auto !important; padding: 0 !important; 
-                   background-color:transparent; display: inline-block !important; float:right; height:2em; text-align:right}
 </style>
 </head>
 
 <body>
-<a class="request-booking" style='border:none;' href='https://book.servicem8.com/request_booking?uuid=bc0fbac1-0127-46d5-ac33-21fa737d187b'><img src='https://www.servicem8.com/images/plugin_online_booking/Booking-Request-Button.png' width='250' height='69' alt='Enquire Now'/></a>
+
 
 <svg class="editorial"
      xmlns="http://www.w3.org/2000/svg"
@@ -305,28 +300,14 @@ p {
 </svg>
 
 
-  
+<nav>
+<a class="request-booking" style='border:none;' href='https://book.servicem8.com/request_booking?uuid=bc0fbac1-0127-46d5-ac33-21fa737d187b'><span>Book Now</span></a>
+<a class="phone" href="tel:+61423181744" > <svg    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10"><path d="m 3.19,1.72 3.62,0 c 0.22,0 0.39,0.17 0.39,0.38 l 0,5.09 C 7.2,7.4 7.03,7.57 6.81,7.57 l -3.62,0 C 2.97,7.57 2.8,7.4 2.8,7.19 L 2.8,2.1 C 2.8,1.89 2.97,1.72 3.19,1.72 Z m 0.72,-0.69 2.18,0 c 0.1,0 0.1,0.22 0,0.22 l -2.19,0 c -0.1,0 -0.1,-0.22 0,-0.22 z m 0.6,7.5 C 4.51,8.26 4.73,8.04 5,8.04 5.27,8.04 5.49,8.26 5.49,8.53 5.49,8.8 5.27,9.02 5,9.02 4.73,9.02 4.51,8.8 4.51,8.53 Z m -2.28,-7.39 0,7.72 c 0,0.34 0.26,0.6 0.59,0.6 l 4.36,0 c 0.33,0 0.59,-0.26 0.59,-0.6 l 0,-7.72 C 7.77,0.804 7.51,0.537 7.18,0.537 l -4.35,0 c -0.34,0 -0.6,0.267 -0.6,0.603 z" /> </svg></a>
+<a class="email"   target="_blank"  href="mailto:steve@waveelectricalnoosa.com.au" ><svg viewBox="0 0 82 56"   fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.119 0 0 3.25 0 7.219V48.75C0 52.719 3.119 56 7 56h68c3.881 0 7-3.281 7-7.25V7.219C82 3.25 78.881 0 75 0H7zm0 2h68c1.25 0 2.375.5 3.25 1.281L44.281 34.688c-1.887 1.745-4.579 1.745-6.468 0L3.78 3.25C4.652 2.486 5.766 2 7 2zM2.563 4.844 28 28.312l-24.687 24A5.424 5.424 0 0 1 2 48.75V7.219c0-.872.213-1.661.563-2.375zm76.875.03c.341.709.562 1.483.562 2.345v41.53a5.425 5.425 0 0 1-1.312 3.563l-24.563-24L79.438 4.875zM52.656 29.657l24.438 23.875A4.802 4.802 0 0 1 75 54H7c-.73 0-1.406-.177-2.031-.469l24.5-23.844 7 6.469a6.7 6.7 0 0 0 9.156 0l7.031-6.5z"/></svg></a>
+<a class="instagram"   target="_blank"  href="https://www.instagram.com/waveelectricalnoosa/" ><svg   xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10"><path d="M 7,2.5 C 7,3 7.75,3 7.75,2.5 7.75,1.99 7,1.99 7,2.5 Z M 3,5 C 3,7.7 7,7.7 7,5 7,2.5 3,2.5 3,5 Z M 5,1 C 9,1 9,1 9,5 9,9 9,9 5,9 1,9 1,9 1,5 1,1 1,1 5,1 Z" /> </svg></a>
+<a class="facebook" target="_blank" href="http://facebook.com/waveelectricalnoosa" ><svg  xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10"><path d="M 4.3,1.1 C 4.6,0.8 5.1,0.7 5.6,0.7 c 0.5,0 0.9,0 1.4,0 0,0.5 0,1 0,1.5 -0.3,0 -0.6,0 -0.9,0 -0.2,0 -0.4,0.1 -0.4,0.3 0,0.4 0,0.7 0,1 0.4,0 0.9,0 1.3,0 C 7,4 6.9,4.5 6.9,5 6.5,5 6,5 5.6,5 c 0,1.4 0,2.9 0,4.3 -0.6,0 -1.1,0 -1.7,0 C 3.8,7.9 3.9,6.4 3.9,5 3.6,5 3.3,5 3,5 3,4.5 3,4 3,3.5 c 0.3,0 0.6,0 0.9,0 0,-0.4 -0.1,-0.9 0,-1.4 0,-0.3 0.1,-0.7 0.4,-1 z" /> </svg></a>
 
-<a class="phone" href="tel:+61423181744" >
-
-    <svg    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-
-<path d="m 3.19,1.72 3.62,0 c 0.22,0 0.39,0.17 0.39,0.38 l 0,5.09 C 7.2,7.4 7.03,7.57 6.81,7.57 l -3.62,0 C 2.97,7.57 2.8,7.4 2.8,7.19 L 2.8,2.1 C 2.8,1.89 2.97,1.72 3.19,1.72 Z m 0.72,-0.69 2.18,0 c 0.1,0 0.1,0.22 0,0.22 l -2.19,0 c -0.1,0 -0.1,-0.22 0,-0.22 z m 0.6,7.5 C 4.51,8.26 4.73,8.04 5,8.04 5.27,8.04 5.49,8.26 5.49,8.53 5.49,8.8 5.27,9.02 5,9.02 4.73,9.02 4.51,8.8 4.51,8.53 Z m -2.28,-7.39 0,7.72 c 0,0.34 0.26,0.6 0.59,0.6 l 4.36,0 c 0.33,0 0.59,-0.26 0.59,-0.6 l 0,-7.72 C 7.77,0.804 7.51,0.537 7.18,0.537 l -4.35,0 c -0.34,0 -0.6,0.267 -0.6,0.603 z" /> </svg>
-Steve: 0423181744</a>
-
-<a class="email"   target="_blank"  href="mailto:steve@waveelectricalnoosa.com.au" >
-<svg viewBox="0 0 82 56"   fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.119 0 0 3.25 0 7.219V48.75C0 52.719 3.119 56 7 56h68c3.881 0 7-3.281 7-7.25V7.219C82 3.25 78.881 0 75 0H7zm0 2h68c1.25 0 2.375.5 3.25 1.281L44.281 34.688c-1.887 1.745-4.579 1.745-6.468 0L3.78 3.25C4.652 2.486 5.766 2 7 2zM2.563 4.844 28 28.312l-24.687 24A5.424 5.424 0 0 1 2 48.75V7.219c0-.872.213-1.661.563-2.375zm76.875.03c.341.709.562 1.483.562 2.345v41.53a5.425 5.425 0 0 1-1.312 3.563l-24.563-24L79.438 4.875zM52.656 29.657l24.438 23.875A4.802 4.802 0 0 1 75 54H7c-.73 0-1.406-.177-2.031-.469l24.5-23.844 7 6.469a6.7 6.7 0 0 0 9.156 0l7.031-6.5z"/></svg>
-</a>
-<a class="instagram"   target="_blank"  href="https://www.instagram.com/waveelectricalnoosa/" >
-<svg   xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-  <path d="M 7,2.5 C 7,3 7.75,3 7.75,2.5 7.75,1.99 7,1.99 7,2.5 Z M 3,5 C 3,7.7 7,7.7 7,5 7,2.5 3,2.5 3,5 Z M 5,1 C 9,1 9,1 9,5 9,9 9,9 5,9 1,9 1,9 1,5 1,1 1,1 5,1 Z" /> </svg>
-</a>
-
-
-<a class="facebook" target="_blank" href="http://facebook.com/waveelectricalnoosa" >
-<svg  xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-  <path d="M 4.3,1.1 C 4.6,0.8 5.1,0.7 5.6,0.7 c 0.5,0 0.9,0 1.4,0 0,0.5 0,1 0,1.5 -0.3,0 -0.6,0 -0.9,0 -0.2,0 -0.4,0.1 -0.4,0.3 0,0.4 0,0.7 0,1 0.4,0 0.9,0 1.3,0 C 7,4 6.9,4.5 6.9,5 6.5,5 6,5 5.6,5 c 0,1.4 0,2.9 0,4.3 -0.6,0 -1.1,0 -1.7,0 C 3.8,7.9 3.9,6.4 3.9,5 3.6,5 3.3,5 3,5 3,4.5 3,4 3,3.5 c 0.3,0 0.6,0 0.9,0 0,-0.4 -0.1,-0.9 0,-1.4 0,-0.3 0.1,-0.7 0.4,-1 z" /> </svg>
-</a>
+</nav>
 <section>
 <div class="preamble">
 <p>Wave Electrical Noosa Pty Ltd works across renovations, new builds, and maintenance projects.  
@@ -375,6 +356,8 @@ Steve: 0423181744</a>
 </div>
  
 <div class="footer">  
+  <a class="phone" href="tel:+61423181744" >Call Steve: +61 423 181 744</a>
+  
   <p>
   <span> <a target="_blank" href="https://fswqap.worksafe.qld.gov.au/elis/contractorDetails.do?dispatch=view&key.id=4852599">QLD Electrical Contractors License No: #92717</a></span>    
   <span> ABN 73678412818 </span>   
