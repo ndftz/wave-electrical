@@ -70,7 +70,7 @@ body {
   margin: 0;
   padding: 0 0 0 0;
 }
-
+.preamble{text-align: left;}
 .content {
   font-family: 'Outfit', sans-serif;
   text-align: center;
@@ -100,18 +100,21 @@ body {
 
 @media (max-width: 50em) {
 
-  .services{display:grid; grid-template-columns: 1fr !important ;}
+  .services{display:grid; grid-template-columns: 1fr !important ; }
   .services div:nth-child(2n){padding:0 !important;}
 section{}
 
 nav a{height: 6em !important; line-height:6em !important;  font-size: 4vw !important;}
 nav a  svg{}
 
+
   .content h1 {
     font-size: 12vmax;
   }
+
+  h2{font-size:6vw;}
 .content{min-height:75vh;}
-p{font-size: 3vw; text-align:center;}
+
 
   .editorial {
     height: 20vw;
@@ -165,7 +168,7 @@ section {
   max-width: 45em;
   margin: 0 auto;
   font-size: 2em;
-  text-align: left;
+  text-align: center;
   font-weight: 200;
 }
 
@@ -261,9 +264,8 @@ h3{color:rgba(10, 45, 80, 1)}
 
 
 .services{display:grid; grid-template-columns: 1fr 1fr ; font-size: 1em}
-.services div{padding-bottom:2em;}
-.services div:nth-child(2n){padding-left:2em}
-.services div:nth-child(odd){padding-right:2em}
+.services div{padding:2em;}
+
 ul, li{list-style:none; margin:0; padding:0}
 li{font-size:.7em; padding-bottom:1.5em}
 </style>
@@ -407,15 +409,17 @@ li{font-size:.7em; padding-bottom:1.5em}
 
  -->
 <div class="featurelist" >
+  <ul>
   <h2>WHO WE SERVE</h2>
-  <p>  Body Corporates </p>
-  <p>  Residential  </p>
-  <p>  Commercial </p>
-  <p>  Industrial </p>
-  <p>  Real Estate </p>
-  <p>  Strata </p>
-  <p>  AirBnB </p>
-  <p>  Events </p>
+  <li>  Body Corporates </li>
+  <li>  Residential  </li>
+  <li>  Commercial </li>
+  <li>  Industrial </li>
+  <li>  Real Estate </li>
+  <li>  Strata </li>
+  <li>  AirBnB </li>
+  <li>  Events </li>
+</ul>
 </div>
  
 <div class="footer">  
