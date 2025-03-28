@@ -110,8 +110,6 @@ nav a  svg{}
 .content{min-height:75vh;}
 p{font-size: 3vw; text-align:center;}
 
-
-
   .editorial {
     height: 20vw;
   }
@@ -168,7 +166,7 @@ section {
 }
 
 .editorial {
-  background-color: #ddd;
+
 }
 
 nav{ position:fixed;bottom:0;display:grid;width:100%;   background-color: rgba(10, 45, 80, 0.85); grid-template-columns: 1fr 1fr 1fr 1fr 1fr}
@@ -212,6 +210,9 @@ nav a:focus svg path, nav a:active svg path {
  
 
 .email svg path{fill: currentcolor; stroke: none}
+
+.email.focus svg path{fill: currentcolor; stroke: none}
+
 .phone svg{display:inline-block; vertical-align: middle}
 
 
@@ -265,7 +266,7 @@ b{font-weight:600}
      xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 24 150 28"
      preserveAspectRatio="none">
-
+<defs>
   <linearGradient gradientUnits="userSpaceOnUse" id="darkblue" x1="23" x2="23" y1="50" y2="23">
     <stop offset="0" style="stop-color:#75CAE4; stop-opacity:.5"/>
     <stop offset="1"  style="stop-color:#4CB7DF; stop-opacity:1"/>
@@ -281,7 +282,8 @@ b{font-weight:600}
     <stop offset="0" style="stop-color:#2067AA"/>
     <stop offset="1"  style="stop-opacity:.85;stop-color:#4080Bb"/>
   </linearGradient>
- <defs>
+
+
  <path id="gentle-wave"
  d="M-160 44c30 0
     58-18 88-18s
@@ -290,6 +292,8 @@ b{font-weight:600}
     58 18 88 18
     v44h-352z" />
   </defs>
+  <rect fill="#ddd" x="-1" y="-1" width="152" height="52" ></rect>
+
   <g class="parallax">
    <use xlink:href="#gentle-wave" x="50" y="0" fill="#47aad5" style="fill:url(#darkblue)"/>
    <use xlink:href="#gentle-wave" x="50" y="3" fill="#2392CB" style="fill:url(#midblue)"/>
