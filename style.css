@@ -250,7 +250,7 @@ a.contact-value:hover { color: var(--blue); }
 }
 
 @media (max-width: 768px) {
-  /* Header: 2-row layout so nav links stay visible */
+  /* Header: brand + social icons on row 1, nav links on row 2 */
   .site-header {
     flex-wrap: wrap;
     padding: 0.8em 1.25em 0;
@@ -260,6 +260,7 @@ a.contact-value:hover { color: var(--blue); }
   .header-social { display: flex; }
   .header-social[aria-label="Email us"] { display: none; }
   .header-cta .btn-outline-white { display: none; }
+  .header-cta .btn-white { display: none; }
   .header-nav {
     display: flex;
     order: 3;
@@ -272,11 +273,12 @@ a.contact-value:hover { color: var(--blue); }
   }
   .header-nav a { font-size: 0.78em; letter-spacing: 0; padding: 0.2em 0; }
 
-  /* Hero: fix overlap, fill screen, smaller waves */
+  /* Hero: use small viewport height so waves are visible on iOS Safari */
+  .hero { height: 100svh; }
   .hero-logo { margin-bottom: -1em; }
   .hero-content { justify-content: center; padding: 7em 1.5em 7em; }
-  .editorial { height: calc(14vh + 2em); bottom: -2.5em; }
-  .hero + .section { padding-top: 6em; }
+  .editorial { height: calc(12vh + 2em); bottom: -2em; }
+  .hero + .section { padding-top: 5em; }
 
   /* Sections */
   .section { padding: 3.5em 1.5em; }
