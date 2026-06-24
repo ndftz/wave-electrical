@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://waveelectricalnoosa.com.au/sitemap.xml
