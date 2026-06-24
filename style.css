@@ -257,7 +257,8 @@ a.contact-value:hover { color: var(--blue); }
     gap: 0;
   }
   .header-brand { font-size: 0.78em; letter-spacing: 0.08em; white-space: nowrap; }
-  .header-social { display: none; }
+  .header-social { display: flex; }
+  .header-social[aria-label="Email us"] { display: none; }
   .header-cta .btn-outline-white { display: none; }
   .header-nav {
     display: flex;
@@ -271,9 +272,11 @@ a.contact-value:hover { color: var(--blue); }
   }
   .header-nav a { font-size: 0.78em; letter-spacing: 0; padding: 0.2em 0; }
 
-  /* Hero: fix overlap and fill the screen better */
+  /* Hero: fix overlap, fill screen, smaller waves */
   .hero-logo { margin-bottom: -1em; }
-  .hero-content { justify-content: center; padding: 7em 1.5em 9em; }
+  .hero-content { justify-content: center; padding: 7em 1.5em 7em; }
+  .editorial { height: calc(14vh + 2em); bottom: -2.5em; }
+  .hero + .section { padding-top: 6em; }
 
   /* Sections */
   .section { padding: 3.5em 1.5em; }
