@@ -258,7 +258,6 @@ a.contact-value:hover { color: var(--blue); }
   }
   .header-brand { font-size: 0.78em; letter-spacing: 0.08em; white-space: nowrap; }
   .header-social { display: flex; }
-  .header-social[aria-label="Email us"] { display: none; }
   .header-cta .btn-outline-white { display: none; }
   .header-cta .btn-white { display: none; }
   .header-nav {
