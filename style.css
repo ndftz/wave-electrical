@@ -184,6 +184,9 @@ a { color: inherit; text-decoration: none; }
 .footer-social a { color: rgba(255,255,255,0.45); font-size: 0.85em; transition: color 0.2s; }
 .footer-social a:hover { color: white; }
 .footer-hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1.5em 0; }
+.footer-service-areas { text-align:center; margin:1em 0 0.5em; font-size:0.78em; }
+.footer-service-areas a { color: rgba(255,255,255,0.7); text-decoration: underline; margin: 0 0.4em; transition: color 0.2s; }
+.footer-service-areas a:hover { color: white; }
 .footer-legal { font-size: 0.72em; color: rgba(255,255,255,0.35); line-height: 2; }
 .footer-legal a { color: inherit; }
 
