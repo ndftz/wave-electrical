@@ -254,7 +254,7 @@ a.contact-value:hover { color: var(--blue); }
 .team-section-inner { max-width: 1300px; margin: 0 auto; }
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; }
 .team-card { text-align: center; }
-.team-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 5%; border-radius: var(--radius); display: block; margin-bottom: 1em; }
+.team-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 10%; border-radius: var(--radius); display: block; margin-bottom: 1em; }
 .team-name { font-weight: 700; font-size: 1.05em; }
 .team-role { font-size: 0.85em; color: var(--text-muted); margin-top: 0.2em; }
 @media (max-width: 900px) {
