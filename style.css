@@ -261,6 +261,7 @@ a.contact-value:hover { color: var(--blue); }
 @media (max-width: 900px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
+.steve-story-photo { object-position: 50% 20%; }
 
 /* ===== GALLERY ===== */
 .gallery-section { margin-bottom: 3.5em; }
@@ -292,6 +293,7 @@ a.contact-value:hover { color: var(--blue); }
   .reviews-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 2.5em; }
   .about-img-wrap::after { display: none; }
+  .steve-story-photo { object-position: 50% 0%; }
 }
 
 @media (max-width: 768px) {
