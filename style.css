@@ -251,9 +251,10 @@ a.contact-value:hover { color: var(--blue); }
 .team-hero-wrap { border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
 .team-hero-wrap img { width: 100%; height: auto; display: block; }
 .team-hero-caption { text-align: center; margin-top: 1em; font-size: 0.85em; color: var(--text-muted); }
+.team-section-inner { max-width: 1300px; margin: 0 auto; }
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; }
 .team-card { text-align: center; }
-.team-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: var(--radius); display: block; margin-bottom: 1em; }
+.team-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 5%; border-radius: var(--radius); display: block; margin-bottom: 1em; }
 .team-name { font-weight: 700; font-size: 1.05em; }
 .team-role { font-size: 0.85em; color: var(--text-muted); margin-top: 0.2em; }
 @media (max-width: 900px) {
